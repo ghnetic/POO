@@ -1,0 +1,31 @@
+CREATE DATABASE biblioteca;
+
+USE biblioteca;
+
+CREATE TABLE autor (idAutor int primary key, nombre VARCHAR(50), direccion varchar(50));
+USE biblioteca;
+CREATE TABLE libro(idLibro int primary key, nombre VARCHAR(50), anio int, idAutor int,
+foreign key(idAutor) references autor(idAutor));
+
+USE biblioteca;
+CREATE TABLE genero(idGenero int primary key, nombre VARCHAR(50));
+
+Use biblioteca;
+CREATE TABLE pretenece(idGenero int, idLibro int, primary key(idGenero, idLibro),
+foreign key(idGenero) references genero(idGenero) ,
+foreign key(idLibro) references Libro(idLibro));
+
+INSERT autor (idAutor, nombre, direccion) values(101,"Juan","CU");
+
+SELECT *
+FROM autor;
+INSERT libro values(1000,"Las aventuras del rey Arturo",1990,100);
+
+SELECT *
+FROM libro;
+
+DELETE FROM libro
+WHERE idLibro = 1000;
+
+DELETE FROM autor
+WHERE idAutor = 101;

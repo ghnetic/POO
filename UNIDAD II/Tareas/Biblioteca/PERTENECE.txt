@@ -1,0 +1,12 @@
+---------------------------------------------------------
+Crear Pertenece
+---------------------------------------------------------
+http://localhost:8080/pertenece/crearPertenece?idLibro=11&idGenero=5
+http://localhost:8080/pertenece/crearPertenece?idLibro=13&idGenero=5
+http://localhost:8080/pertenece/crearPertenece?idLibro=12&idGenero=6
+
+
+------------------------------------------------------------
+Listar Pertenece
+-----------------------------------------------------------
+http://localhost:8080/pertenece/listarPertenece

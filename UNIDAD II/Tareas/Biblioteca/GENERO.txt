@@ -1,0 +1,10 @@
+---------------------------------------
+Listar los generos
+------------------------------------
+http://localhost:8080/genero/listarGenero
+
+--------------------------------------
+Crear genero
+--------------------------------------
+http://localhost:8080/genero/crearGenero?idGenero=5&nombre=Fantasia
+http://localhost:8080/genero/crearGenero?idGenero=6&nombre=Vida Real

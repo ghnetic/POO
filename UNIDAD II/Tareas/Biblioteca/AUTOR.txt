@@ -1,0 +1,30 @@
+----------------------------------------------------------------------------------------
+                        Creacion de los autores
+----------------------------------------------------------------------------------------
+http://localhost:8080/autor/crearAutor?id=104&nombre=Ingeniero&direccion=San Pedro Sula
+http://localhost:8080/autor/crearAutor?id=105&nombre=Karla Videa&direccion=Rio Grande
+http://localhost:8080/autor/crearAutor?id=106&nombre=Gineth Videa&direccion=Suyapa
+
+----------------------------------------------------------------------------------------
+            Eliminar autor por Id (Debe estar eliminado el libro de ese autor antes)
+----------------------------------------------------------------------------------------
+http://localhost:8080/autor/eliminarAutor?id=106
+
+----------------------------------------------------------------------------------------
+                            Actualizar Nombre del autor
+----------------------------------------------------------------------------------------
+http://localhost:8080/autor/actualizarAutor?nombre=Hanna Montana&idAutor=105
+http://localhost:8080/autor/actualizarAutor?nombre=Mufasa&idAutor=104
+
+----------------------------------------------------------------------------------------
+                                    Listar autores
+---------------------------------------------------------------------------------------
+http://localhost:8080/autor/listaAutores
+
+--------------------------------------------------------------------------------------
+                                Eliminar Todos los autores
+---------------------------------------------------------------------------------------
+http://localhost:8080/autor/eliminarAutores
+
+
+

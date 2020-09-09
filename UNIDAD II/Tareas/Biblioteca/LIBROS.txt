@@ -1,0 +1,31 @@
+------------------------------------------------
+Listar los libros
+------------------------------------------------
+
+http://localhost:8080/libros/listarLibros
+
+-----------------------------------------------
+Crear libros
+-----------------------------------------------
+http://localhost:8080/libros/crearLibros?idLibro=10&nombre=101 Dalmatas&anio=1976&idAutor=104
+http://localhost:8080/libros/crearLibros?idLibro=11&nombre=Vuelta al Mundo&anio=2000&idAutor=104
+http://localhost:8080/libros/crearLibros?idLibro=12&nombre=Las Aventuras de Tim&anio=2020&idAutor=105
+http://localhost:8080/libros/crearLibros?idLibro=13&nombre=Ecuacione Diferenciales&anio=2002&idAutor=105
+
+------------------------------------------------
+Actualizar Nombre del libros
+-------------------------------------------------
+http://localhost:8080/libros/actualizarLibro?nombre=Divergente&idLibro=11
+http://localhost:8080/libros/actualizarLibro?nombre=Cuatro&idLibro=11
+http://localhost:8080/libros/actualizarLibro?nombre=Ecuaciones Diferenciales&idLibro=13
+
+------------------------------------------------
+Eliminar Todos Los libros
+-------------------------------------------------
+http://localhost:8008/libros/eliminarLibros
+
+
+
+
+
+

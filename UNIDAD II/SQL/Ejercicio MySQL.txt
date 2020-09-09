@@ -1,0 +1,45 @@
+CREATE DATABASE ejemploPOO;
+
+use ejemplopoo;
+
+CREATE TABLE producto(idProducto int PRIMARY KEY, nombre VARCHAR(50), precio DECIMAL(20.5));
+
+CREATE TABLE venta(idVenta int PRIMARY KEY, fechaVenta Date);
+
+CREATE TABLE detalleventa(idProducto int, idventa int, cantidad int, precio DECIMAL(20.5),
+PRIMARY KEY(idProducto , idventa ), foreign key(idProducto) references producto(idProducto),
+foreign key(idVenta) references venta(idVenta));
+
+
+INSERT INTO producto(idProducto, nombre) VALUES(100,"Leche caja");
+
+SELECT *
+FROM producto;
+
+UPDATE producto
+SET precio = 5
+WHERE idProducto = 100;
+
+UPDATE producto
+SET idProducto = 1000
+WHERE idProducto = 100;
+
+INSERT INTO Venta values(1, "2020-07-02");
+
+INSERT INTO detalleVenta VALUES (1000,1,2,100);
+
+SELECT *
+FROM detalleVenta
+WHERE idProducto = 1000
+AND idventa =1;
+
+SELECT v.idventa,
+v.fechaVenta,
+p.nombre nombreproducto,
+d.precio,
+d.cantidad
+FROM venta v
+INNER JOIN detalleVenta d
+ON v.idVenta = d.idVenta
+INNER JOIN producto p
+ON p.idProducto = d.idProducto;

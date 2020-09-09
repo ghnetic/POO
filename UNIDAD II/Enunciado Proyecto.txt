@@ -1,0 +1,48 @@
+
+Se les ha contratado para realizar el desarrollo de un sistema de ventas:
+
+El proceso de ventas en el sistema abarcará los siguientes pasos: Ingreso de pedido de venta, emisión de orden de entrega (despacho), facturación y cobranza.
+
+El sistema enviará un correo electrónico cuando se registre alguna de las siguientes transacciones: pedido de venta de cliente, despacho de mercancía al cliente, emisión de factura a cliente y registro de pago de cliente
+
+Cliente:
+
+El sistema manejará un registro maestro de clientes (idUsuario, nombre, dirección, correo electrónico, teléfono). Dentro del sistema se podrá podrán ingresar nuevos clientes, modificar los datos o eliminarlos.
+
+Se permitirán asociar varias direcciones al registro de cliente y se le podrá asignar a cada dirección un propósito, por ejemplo dirección fiscal, dirección de despacho
+
+A cada cliente se le asignara un límite de crédito con el cual se realizarán los pedidos. 
+
+Un cliente no podrá realizar un pedido que exceda de su límite de crédito.
+
+Productos:
+
+El sistema permitirá manejar un maestro de productos, en el cual se registrarán todos los ítems que se pueden vender. Cada item debe tener al menos su nombre, unidad de medida, precio y descripción y cantidad exisente.
+
+Cada producto deberá está asociado a uno o más proveedores (idProveedor, nombre, teléfono, dirección correo electrónico, RTN).
+
+Pedidos:
+
+Al ingresar un pedido de venta se deberá asignar un cliente, el pedido debe tener asociado una fecha en la que se realizó. 
+
+Cada pedido debe tener almacenado una lista de los productos vendidos conservando el id del producto, cantidad y precio de venta.
+
+Además se deberá tener seleccionada una de las direcciones del cliente.
+
+El pedido se podrá registra en borrador, pudiendo ser modificado y registrado en definitivo posteriormente hasta antes de su despacho.
+
+No se podrán realizar pedidos de productos con cantidades superiores al inventario.
+
+Una vez finalizado el pedido se debe actualizar el inventarios (igual si se elimina o modifica el inventario).
+
+Despacho:
+
+Un pedido luego de finalizarse para al estado de despacho, al cual se le asocia una orden de entrega.
+
+A la orden de entrega se le asocia el empleado responsable de entregar, fecha de creación y fecha de entrega con el fin de medir el rendimiento de los empleados (id empleado, nombre, teléfono, dirección)
+
+Pagos (facturación):
+
+A cada orden de entrega tendrá asociado un pago el cual corresponde al valor del pedido más un costo adicional por la entrega, este pago puede ser por medio de una tarjeta de crédito (en caso de que sea una tarjeta de crédito se debe registrar el número, fecha de expiración, tipo, clave) o en efectivo para el caso de efectivo se debe registrar el monto pagado y el vuelto regresado.
+
+Una vez que se ha realizado el pago los pedidos relacionados con el despacho se consideran cerrados.

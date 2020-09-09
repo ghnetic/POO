@@ -1,0 +1,20 @@
+* Java 8 , JDK (Configurar variables de entorno)
+
+* Spring Tool Suit 3 o 4:
+
+     Esta herramienta no es necesario instalarla solo descargar el archivo comprimido desde:
+
+       https://spring.io/tools
+descarguen el archivo ejecutable que les descargara un archivo comprimido (por ejemplo: sts-4.7.0.RELEASE), dentro de este archivo encontraran en ejecutable para el STS
+
+
+
+*Maven última versión 
+
+ https://maven.apache.org/download.cgi
+
+descargue la versión binaria:
+
+*Configure Maven
+https://www.youtube.com/watch?v=ExOl1qkYGiI&feature=youtu.be
+

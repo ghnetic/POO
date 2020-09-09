@@ -7,4 +7,4 @@ OJO: Éste fue creado con fines educativos y se prohibe presentar los trabajos c
 Resultado Final de la Clase:
 
 Login
-![image](https://{i.imgur.com/sJx6A9R.png})
+
